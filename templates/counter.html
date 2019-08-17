@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <h1>Test form for calculation</h1>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+        <h1>Currency converter</h1>
     </head>
 
     <body>
-       {errors}
+        {errors}
         <form method="post" action=".">
             Enter the rate for euro:
             <p><input name="rate_e" /></p>
