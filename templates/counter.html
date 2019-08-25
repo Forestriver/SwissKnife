@@ -1,30 +1,22 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial scale=1.0">
-        <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
-        <h1>Currency converter</h1>
-    </head>
+{% extends "layout.html"%}
+{% block content%}
+<div class="container">
+    {errors}
+    <form method="post" action=".">
+        Enter the rate for euro:
+        <p><input name="rate_e" /></p>
 
-    <body>
-        <div class="container">
-            {errors}
-            <form method="post" action=".">
-                Enter the rate for euro:
-                <p><input name="rate_e" /></p>
+        Enter the rate for dollar:
+        <p><input name="rate_d" /></p>
 
-                Enter the rate for dollar:
-                <p><input name="rate_d" /></p>
+        Enter euros quantity:
+        <p><input name="euros" /></p>
 
-                Enter euros quantity:
-                <p><input name="euros" /></p>
+        Enter dollars quantity:
+        <p><input name="dollars" /></p>
 
-                Enter dollars quantity:
-                <p><input name="dollars" /></p>
+        <p><input type="submit" value="Total amount" /></p>
 
-                <p><input type="submit" value="Total amount" /></p>
-
-            </form>
-      </div>
-    </body>
-</html>
+    </form>
+</div>
+{% endblock %}

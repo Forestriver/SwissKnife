@@ -6,7 +6,11 @@ header{
 }
 
 body{
-  background-color: #C8C6AA;
+  background-image: url("../images/florida_bridge.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   margin: 100px;
   padding: 0px;
   font-family: "Freestle scrypt", Helvetica, Arial, sans-serif;

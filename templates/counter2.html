@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <body>
-        <p>The result is: {result} UAH</p>
-        <form action='/' method="get">
-            <input type="submit" value="Click here to calculate again" name="Submit">
-        </form>
-    </body>
-</html>
+{% extends "layout.html"%}
+{% block content%}
+<p>The result is: {result} UAH</p>
+  <form action='/' method="get">
+    <input type="submit" value="Click here to calculate again" name="Submit">
+  </form>
+{% endblock %}
