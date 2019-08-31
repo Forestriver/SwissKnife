@@ -1,24 +1,73 @@
-header{
-  background-color: #3C4554;
-  height: 80px;
-  width: 100%;
-  margin-bottom: 10px;
+header:before {
+  animation: fade-slide-down 4s .1s ease-out forwards;
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.8)),
+          url(../images/florida_bridge.jpg) no-repeat bottom;
+  background-size: cover;
+  content: "";
+  opacity: 0;
+  position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+  z-index: -1;
+}
+
+
+header:after {
+  background: #F9FCFF;
+  content: "";
+  height: 40rem;
+  left: -5%;
+  position: absolute;
+      right: -5%;
+      top: 90%;
+      transform-origin: 0 0;
+      transform: rotateZ(-4deg);
+  z-index: 0;
+}
+
+@keyframes fade-slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+
 }
 
 body{
-  background-image: url("../images/florida_bridge.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  margin: 100px;
-  padding: 0px;
-  font-family: "Freestle scrypt", Helvetica, Arial, sans-serif;
-  color: inherit;
+  width: 1000px;
+  height: 700px;
+  text-align: center;
+  font-family: "FuturaPT", Helvetica, Arial,sans-serif;
+  color: #1F211E;
 }
 
-
 .container {
-  width: 1100px;
-  margin: 0 auto;
+  width: 950px;
+  height: auto;
+  margin: 10px;
+  padding: 30px;
+  position: absolute;
+
+}
+
+input[type=Submit] {
+  padding: 8px 25px;
+  background-color: grey;
+  border-radius: 8px;
+  font-weight: bold;
+  color: black;
+  border-style: groove;
+  opacity: 0.6
+}
+
+input[name=rate_e], [name=rate_d], [name=euros], [name=dollars]{
+  border-radius: 5px;
+  padding: 3px 5px;
+  color: red;
 }

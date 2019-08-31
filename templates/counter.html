@@ -2,18 +2,11 @@
 {% block content%}
 <div class="container">
     {errors}
+    <h1 class="header-title">Welcome to the currency converter application.</h1>
     <form method="post" action=".">
-        Enter the rate for euro:
-        <p><input name="rate_e" /></p>
+        <div>Enter the rate for EUR: <input name="rate_e" />  EUR quantity: <input name="euros" /></div>
 
-        Enter the rate for dollar:
-        <p><input name="rate_d" /></p>
-
-        Enter euros quantity:
-        <p><input name="euros" /></p>
-
-        Enter dollars quantity:
-        <p><input name="dollars" /></p>
+        <div><p>Enter the rate for USD: <input name="rate_d" />  USD quantity:  <input name="dollars" /></p></div>
 
         <p><input type="submit" value="Total amount" /></p>
 

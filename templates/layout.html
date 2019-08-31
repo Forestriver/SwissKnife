@@ -5,10 +5,13 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
       <title>Currency converter</title>
+
     </head>
     <body>
-      <p><h1>This string placed here temporary to test this website responsive features.</h1></p>
-        {% block content%}
-        {% endblock %}
+      <header>
+        <section class="header-content">
+          {% block content%}
+          {% endblock %}
+      </header>
     </body>
   </html>
